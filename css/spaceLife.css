@@ -1,0 +1,227 @@
+ /* 全局样式 */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Microsoft YaHei", sans-serif;
+    }
+
+    body {
+        background-color: #f5f7fa;
+        color: #333;
+        scroll-behavior: smooth;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        color: #003366;
+        text-align: center;
+        margin: 50px 0 30px;
+        font-size: 28px;
+    }
+
+    /* 导航栏样式 */
+    nav {
+        background-color: #003366;
+        color: white;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        position: relative;
+    }
+
+    nav ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 15px 20px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+    nav ul li a:hover {
+        background-color: #004a87;
+    }
+
+    /* 下拉菜单 */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 0 0 5px 5px;
+    }
+
+    .dropdown-content a {
+        color: #333;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        transition: background-color 0.3s;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #e6e6e6;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* 太空生活体验站样式 */
+    /* .space-life-section {
+        padding: 80px 0;
+    } */
+
+    .section-title {
+        color: #003366;
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+
+    .card-header {
+        background-color: #003366;
+        color: white;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .card-grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .card-grid p {
+        line-height: 1.8;
+    }
+
+    .fun-fact {
+        background-color: #f8f9fa;
+        border-left: 4px solid #3D85C6;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    .faq-item {
+        margin-bottom: 20px;
+    }
+
+    .faq-question {
+        color: #003366;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    /* 视频部分样式 */
+    .video-container {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .video-container video {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .video-info {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .video-info h3 {
+        color: #003366;
+        margin-bottom: 10px;
+    }
+
+    /* 页脚 */
+    footer {
+        background-color: #003366;
+        color: white;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .social-links {
+        margin-bottom: 20px;
+    }
+
+    .social-links a {
+        color: white;
+        margin: 0 10px;
+        font-size: 20px;
+        transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+        color: #3D85C6;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+
+    /* 响应式设计 */
+    @media (max-width: 768px) {
+        nav ul {
+            flex-direction: column;
+        }
+
+        nav ul li {
+            text-align: center;
+        }
+
+        .dropdown-content {
+            width: 100%;
+            text-align: center;
+        }
+
+        .card-grid {
+            grid-template-columns: 1fr;
+        }
+    }

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>载人航天科普网</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="javascript/index.js"></script>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">首页</a>
+                <div class="dropdown-content">
+                    <a href="#history">航天历程</a>
+                    <a href="#astronauts">航天员风采</a>
+                    <a href="#about">关于我们</a>
+                </div>
+            </li>
+            <li><a href="./spaceLife.html">太空生活体验站</a></li>
+        </ul>
+    </nav>
+
+    <!-- 轮播图 -->
+    <section class="hero-section" id="home">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="./images/1001.jpg" alt="神舟飞船发射">
+                <div class="slide-text">
+                    <h3>神舟飞船发射</h3>
+                    <p>中国载人航天工程的核心运载工具</p>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="./images/1002.jpg" alt="航天员太空行走">
+                <div class="slide-text">
+                    <h3>太空行走</h3>
+                    <p>航天员在太空中进行舱外活动</p>
+                </div>
+            </div>
+            <div class="mySlides fade">
+                <img src="./images/1003.jpg" alt="天宫空间站">
+                <div class="slide-text">
+                    <h3>天宫空间站</h3>
+                    <p>中国自主建设的太空实验室</p>
+                </div>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- 航天历程 -->
+    <section class="history-section" id="history">
+        <div class="container">
+            <h2>航天历程</h2>
+            <div class="history-container">
+                <div class="history-card">
+                    <img src="./images/1011.jpg" alt="东方红一号">
+                    <div class="history-card-content">
+                        <h3>东方红一号</h3>
+                        <p>1970年4月24日，中国第一颗人造地球卫星发射成功，标志着中国进入太空时代。</p>
+                    </div>
+                </div>
+                <div class="history-card">
+                    <img src="/images/1012.jpg" alt="神舟五号">
+                    <div class="history-card-content">
+                        <h3>神舟五号载人飞船</h3>
+                        <p>2003年10月15日，杨利伟乘坐神舟五号进入太空，成为中国首位航天员。</p>
+                    </div>
+                </div>
+                <div class="history-card">
+                    <img src="/images/1013.jpg" alt="天宫空间站">
+                    <div class="history-card-content">
+                        <h3>天宫空间站</h3>
+                        <p>2022年，中国天宫空间站全面建成，开启了中国载人航天工程的新篇章。</p>
+                    </div>
+                </div>
+                <div class="history-card">
+                    <img src="/images/1014.jpg" alt="神舟七号">
+                    <div class="history-card-content">
+                        <h3>神舟七号太空行走</h3>
+                        <p>2008年，翟志刚完成中国首次太空行走，标志中国掌握出舱活动技术。</p>
+                    </div>
+                </div>
+                <div class="history-card">
+                    <img src="/images/1015.jpg" alt="嫦娥五号">
+                    <div class="history-card-content">
+                        <h3>嫦娥五号</h3>
+                        <p>2020年，嫦娥五号成功从月球采样返回，实现中国首次地外天体采样返回。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 航天员展示区 -->
+    <section class="astronauts-section" id="astronauts">
+        <div class="container">
+            <h2>航天员风采</h2>
+            <div class="astronauts-container">
+                <div class="astronaut-card">
+                    <img src="./images/1021.jpg" alt="杨利伟">
+                    <div class="astronaut-card-content">
+                        <h3>杨利伟</h3>
+                        <p>中国首位航天员，2003年执行神舟五号任务。</p>
+                    </div>
+                </div>
+                <div class="astronaut-card">
+                    <img src="./images/1022.jpg" alt="翟志刚">
+                    <div class="astronaut-card-content">
+                        <h3>翟志刚</h3>
+                        <p>执行神舟七号任务，完成中国首次太空行走。</p>
+                    </div>
+                </div>
+                <div class="astronaut-card">
+                    <img src="./images/1023.jpg" alt="王亚平">
+                    <div class="astronaut-card-content">
+                        <h3>王亚平</h3>
+                        <p>两次进入太空，进行太空授课，激励无数青少年探索科学。</p>
+                    </div>
+                </div>
+                <div class="astronaut-card">
+                    <img src="./images/1024.jpg" alt="聂海胜">
+                    <div class="astronaut-card-content">
+                        <h3>聂海胜</h3>
+                        <p>三次进入太空，是目前执行太空任务次数最多的中国航天员。</p>
+                    </div>
+                </div>
+                <div class="astronaut-card">
+                    <img src="./images/1025.jpg" alt="费俊龙">
+                    <div class="astronaut-card-content">
+                        <h3>费俊龙</h3>
+                        <p>执行神舟六号任务，实现多人多天太空飞行。</p>
+                    </div>
+                </div>
+                <div class="astronaut-card">
+                    <img src="./images/1026.jpg" alt="景海鹏">
+                    <div class="astronaut-card-content">
+                        <h3>景海鹏</h3>
+                        <p>三次进入太空，见证了中国载人航天的重要里程碑。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2>关于我们</h2>
+            <div class="about-container">
+                <div class="about-content">
+                    <h3>中国载人航天科普网</h3>
+                    <p>中国载人航天科普网致力于传播载人航天知识，弘扬航天精神，激发公众对宇宙探索的热情。我们通过丰富的图文资料，全方位展示中国载人航天事业的发展历程与成就。</p>
+                    <p>网站内容涵盖载人航天历史、航天员风采、航天器介绍等多个领域，旨在为广大航天爱好者提供一个专业、权威、全面的科普平台。</p>
+                    <div class="contact-info">
+                        <h4>联系方式</h4>
+                        <p><i class="fa fa-envelope-o"></i> contact@spacechina.com</p>
+                        <p><i class="fa fa-phone"></i> 010-12345678</p>
+                        <p><i class="fa fa-map-marker"></i> 北京市海淀区航天城</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="./images/1031.jpg" alt="中国航天">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fa fa-weibo"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-wechat"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="copyright">
+                <p>© 2025 中国载人航天科普网 版权所有</p>
+                <p>ICP备案号：京ICP备XXXXXXXX号</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
